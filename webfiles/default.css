@@ -1,0 +1,131 @@
+body {
+	font-family: 'Lato';
+	color: #89867e;
+	background: #fff;
+}
+.logo {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  color: #2e2a28;	
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  
+}
+.search input[type="text"], textarea {
+  background-color: #d1d1d1; 
+}
+
+
+
+.searchTerm {
+  width: 100%;
+  border: 0px solid #808080;
+  padding: 5px;
+  height: 24px;
+  box-shadow: 0 4px #575757;
+  border-radius: 9px 0px 0px 9px;
+  outline: none;
+  color: /*#9DBFAF*/green;
+}
+
+.searchTerm:focus{
+  color: /*#00B4CC*/black;
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.searchButton {
+  width: 40px;
+  height: 34px;
+  border: 0px solid #00B4CC;
+  background: #d1d1d1/*#00B4CC*/;
+  box-shadow: 0 4px #575757;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+/* General button style (reset) */
+.btn {	
+
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;	
+	padding: 6px 30px;       
+	display: inline-block;   
+	margin: 30px 0px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;  
+		
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+/* Button 2 */
+.btn-2 {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;         
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+/* Button 2c */
+.btn-2c {
+	border-radius: 9px;
+}
+
+.btn-2c:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2c:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+
+/* Button 2i */
+.btn-2i {
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	padding: 0;
+}
+
+.btn-2i:hover {
+	box-shadow: 0 4px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2i:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+
+
