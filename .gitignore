@@ -1,7 +1,7 @@
-debug_index.html
-index.html
-tests/*.in
-tests/*.out
-tests/*.txt
-package.json
-server/*
+flaskenv
+**/*.pyc
+**/__pycache__
+**/*.in
+**/*.out
+**/*.txt
+!requirements.txt
