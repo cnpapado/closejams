@@ -5,3 +5,4 @@ flaskenv
 **/*.out
 **/*.txt
 !requirements.txt
+config.py

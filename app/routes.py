@@ -1,13 +1,12 @@
-from flask import render_template
+from flask import render_template, request, jsonify
 from app import app
 #from app.forms import ArtistSearch
 
 @app.route('/')
 def startpage():
-    #form = ArtistSearch()
-    #if form.validate_on_submit(): return "Validated!"
-    return render_template('start.html')#, form=form)
+    return render_template('start.html')
     
-
-
-
+@app.route('/postme', methods=['POST'])
+def getjsdata():
+    artist1 = request.form['artist1']
+    return jsonify({'name':'snarky puppy'})

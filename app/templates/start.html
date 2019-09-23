@@ -1,28 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src={{ url_for('static', filename='search.js') }}></script>
 <div class="bg">
 	<div class="logo">You like a band. <br>And another one. <br> And you need to travel to see 'em all!</div>
-	<div class="wrap">
-    	<form method="POST">     
+	<div class="wrap">   
 		<div class="search">         
-        		<input type="text" class="searchTerm" placeholder="What are you looking for?" name="artist1">
-           		<button type="submit" class="searchButton">
+        		<input type="text" class="searchTerm" placeholder="What are you looking for?" id="artist1">
+           		<button id="artist1button" class="searchButton">
                	    		<i class="fa fa-search"></i>
    			</button>
-                </div>
-	</form>		
-	<br>
-	<form class="POST">		
- 		<div class="search">
-        		<input type="text" class="searchTerm" placeholder="What are you looking for?" name="artist2">
-            		<button type="submit" class="searchButton">
-        			<i class="fa fa-search"></i>
-   			</button>
-        	</div>
-	</form>		
-<button class="btn btn-2 btn-2c" type="submit">Let's travel</button>
-	</div>
+                </div>		
+	<br>		
+ 	<div class="search">
+        	<input type="text" class="searchTerm" placeholder="What are you looking for?" id="artist2">
+        	<button id="artist2button" class="searchButton">
+        		<i class="fa fa-search"></i>
+   		</button>
+        </div>	
+	<button class="btn btn-2 btn-2c" id="finalbutton">Let's travel</button>
+<div id="hiddendiv"></div>
+</div>
 
 {% endblock %}
 
