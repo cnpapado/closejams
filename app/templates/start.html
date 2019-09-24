@@ -5,6 +5,7 @@
 <div class="bg">
 	<div class="logo">You like a band. <br>And another one. <br> And you need to travel to see 'em all!</div>
 	<div class="wrap">   
+		<div id="searchmodule">
 		<div class="search">      
         		<input type="text" class="searchTerm" placeholder="What are you looking for?" id="artist1">
            		<button id="artist1button" class="searchButton">
@@ -12,13 +13,17 @@
    			</button>                
 		</div>		
                 <select id="results" class = "searchTerm2" style = "display: none;" ></select>
+		</div>	
 	<br>		
+	<div id="searchmodule">	
  	<div class="search">
         	<input type="text" class="searchTerm" placeholder="What are you looking for?" id="artist2">
         	<button id="artist2button" class="searchButton">
         		<i class="fa fa-search"></i>
    		</button>
         </div>	
+	<select id="results" class = "searchTerm2" style = "display: none;" ></select>	
+	</div>	
 	<button class="btn btn-2 btn-2c" id="finalbutton">Let's travel</button>
 <div id="hiddendiv"></div>
 </div>
