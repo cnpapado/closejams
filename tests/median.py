@@ -1,4 +1,9 @@
 import numpy
+import sys 
+import os
+sys.path.append(os.path.abspath("/mnt/MyData/UbuntuDesktop/ClosestPair/this_flask/misc/"))
+from 'quickselect.py' import *
+
 with open("quickselect.in") as f:
     lines=f.readlines()
     for index, line in enumerate(lines):
@@ -6,7 +11,7 @@ with open("quickselect.in") as f:
             k = int(line)
             continue
         a = numpy.fromstring(line, dtype=int, sep=',')
-        out = open("quickselect.out", 'wb')
-        #out.write(int(2))
+        out = open("quickselect2.out", 'wb')
+        out.write(quickselect(a, k))
         #print(copy.quickselect(a,k)) 
         print(numpy.partition(a, k)[k])

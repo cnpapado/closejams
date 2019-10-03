@@ -1,0 +1,8 @@
+flaskenv
+**/*.pyc
+**/__pycache__
+**/*.in
+**/*.out
+**/*.txt
+!requirements.txt
+config.py
